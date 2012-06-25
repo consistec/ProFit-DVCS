@@ -8,8 +8,8 @@ Grundlegende Infos
   Doppelklick auf \Portable Git\git-bash.bat auf dem USB-Stick
 
 * Konfigurieren Sie Ihren Nutzernamen, damit wir nachher Commits der Teilnehmer auseinander halten können
-   git config --global user.name "Joe Sixpack"
-   git config --global user.email joe.sixpack@g_mail.com
+   git config --global user.name "Max Mustermann"
+   git config --global user.email max@mustermann.de
 
 * Clonen Sie das Beispielrepository
    cd projects
