@@ -43,7 +43,7 @@
       * Aufnahme in den Index: git add Dateiname
       * Committen Sie den initialen Dateizustand
    * Editieren Sie GruppeX.html (z.B. mit Wordpad oder in der Shell)
-      * Fügen Sie Ihren Namen ein und TODO
+      * Fügen Sie Ihren Namen ein und führen Sie nach Belieben weitere Änderungen durch
    * Hotfix
       * Wir möchten an dieser Stelle den typischen Fall durchspielen, dass während der Entwicklung eines Features ein kritischer Bug auftritt. Dieser muss natürlich sofort gefixt werden und Ihre aktuelle Arbeit muss beiseite gelegt werden.
       * Überlegen Sie kurz, wie Sie das in Subversion umsetzen würden.
