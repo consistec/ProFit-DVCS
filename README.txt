@@ -1,13 +1,14 @@
-Grundlegende Infos
+* Allgemeine Hinweise
    * Für die Praxisübung haben wir bei http://www.github.com einen gemeinsamen Account angelegt
        Username: profitdvcs
        Passwort: profit2.0
+   * In der Shell bekommen Sie mittels "git Kommando --help" (z.B. git commit --help) Hilfe zu allen Git Kommandos
+   * In der Shell steht Ihnen für Git Kommandos Tab-Completion zur Verfügung
 
 * Starten Sie eine Git-Bash Shell
 
   Doppelklick auf \Portable Git\git-bash.bat auf dem USB-Stick
 
-* Hilfe zu allen Git Kommandos bekommen Sie mittels "git Kommando --help" (z.B. git commit --help)
 
 * Konfigurieren Sie Ihren Nutzernamen, damit wir nachher Commits der Teilnehmer auseinander halten können
    git config --global user.name "Max Mustermann"
