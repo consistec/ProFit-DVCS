@@ -34,6 +34,9 @@ Grundlegende Infos
    * Checken Sie den Master Branch aus
       * git checkout master
       * Überprüfen Sie das Ergebnis in der Kommandozeile (git status) und in Gitk
+   * Erstellen Sie einen Branch GruppeX für die Arbeiten an Ihrer Datei (git branch GruppeX)
+      * Wechseln Sie auf den neu erstellten Branch (git checkout GruppeX)
+      * Sie können diese beiden Kommandos auch in einem Schritt ausführen (git checkout -b GruppeX)
    * Erstellen Sie eine Kopie GruppeX.html von Template.html und fügen Sie diese dem Repository hinzu
       * Kopieren in Explorer oder Shell
       * Aufnahme in den Index: git add Dateiname
@@ -50,5 +53,20 @@ Grundlegende Infos
 	 * committen Sie Ihren Bugfix
 	 * Normalerweise würden Sie an dieser Stelle den Bugfix auch in das zentrale Repository pushen; das lassen wir in der Übung weg, da es unvermeidlich zu Merge-Konflikten zwischen den einzelnen Gruppen käme (jede Gruppe behebt den gleichen Fehler)
       * Der akute Fehler wurde behoben und Sie können sich wieder der ursprünglichen Aufgabe zuwenden
-         * 
+         * wechseln Sie zurück auf Ihren Branch: git checkout GruppeX
+	 * Sehen Sie sich die HTML-Datei im Editor an: Ihre gestashten Änderungen sind nicht enthalten
+	 * Holen Sie die Änderungen vom Stash: git stash pop
+	 * Nun entspricht die HTML-Datei im Working-Directory wieder dem letzten Stand bevor Sie den Fehler beheben mussten
+	 * Schließen Sie Ihre Änderungen ab und committen Sie
+   * Integrieren Sie Ihre Änderungen in den master Branch
+      * Wechseln Sie auf den master Branch (git checkout master)
+      * Integrieren Sie Ihre Änderungen (git merge GruppeX)
+      * Schauen Sie sich das Ergebnis in gitk an
+   * Senden Sie Ihre Arbeit zum Server
+      * Da auch die anderen Gruppen auf diesem Branch aktiv sind, sollten Sie zunächst Ihr Repository noch einmal mit dem Server synchronisieren
+         * Beziehen Sie Änderungen vom Server: git fetch
+	 * Falls es Änderungen gab, integrieren Sie diese mit Ihren Änderungen: git merge origin/master
+      * Senden Sie Ihren Stand an den Server
+         * git push
+         
 
