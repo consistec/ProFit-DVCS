@@ -14,3 +14,34 @@ html, body {
 	width: 60%;
 }
 
+#msgbox {
+	padding:10px;
+	color:#555;
+	margin-bottom:10px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background-color: #DBE3FF;
+	border: 1px solid #A2B4EE;
+}
+
+#msgbox h4 {
+	margin:0;
+	font-size:110%;
+	padding:3px 0;
+	border-bottom:solid 1px #A2B4EE;
+}
+
+#msgbox p
+{
+	margin:0;
+	padding:10px;
+	font-size:110%
+}
+
+#msgbox p.msgimg {
+	background-image: url("info.png");
+	background-position: left 10px;
+	background-repeat: no-repeat;
+	padding-left: 25px;
+}
+
