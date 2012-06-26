@@ -1,0 +1,17 @@
+html, body {
+	color: #707173;
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	font-size: 13px;
+	line-height: 1.5em;
+}
+
+#header {
+	font-size: 22px;
+	font-weight: bold;
+}
+
+#intro {
+	width: 60%;
+	margin: auto;
+}
+
