@@ -23,8 +23,9 @@
       Da Sie diese Zeilen lesen k&ouml;nnen, haben Sie das git Repository dieses Workshops erfolgreich gecloned. Wie Sie bereits gelernt haben, befindet sich damit nun die gesamte History des Repositories bei ihnen lokal auf dem USB-Stick und der Branch "master" wurde bereits ausgecheckt. Nun geht es mit folgenden Schritten weiter...
       <br>
       <br>
-      <em>Allgemeine Hinweise</em>
+      <h4>Allgemeine Hinweise</h4>
       <ul>
+	<li>Auf dem USB-Stick finden Sie ein portable Version von Git, die Sie f&uuml;r die folgenden Aufgaben nutzen k&ouml;nnen</li>
 	<li>F&uuml;r die Praxis&uuml;bung haben wir bei <a href="http://www.github.com">Github</a> einen gemeinsamen Account angelegt<br>
 	  Username: profitdvcs<br>
 	  Passwort: profit2.0
@@ -36,7 +37,26 @@
       </ul>
       <br>
     </div>
+    <div id="Vorarbeiten">
+      <h4>Vorarbeiten</h4>
+      <ul>
+	<li>Starten Sie eine zun&auml;chst eine Git-Bash Shell f&uuml; die weiteren Arbeiten durch Doppelklick auf <code>\Portable Git\git-bash.bat</code> auf dem USB-Stick</li>
+	<li>Konfigurieren Sie in Git Ihren Nutzernamen, damit wir nachher Commits der Teilnehmer auseinander halten k&ouml;nnen
+	  <ol>
+	    <li><code>git config --global user.name "Max Mustermann"</code></li>
+	    <li><code>git config --global user.email max@mustermann.de</code></li>
+	  </ol>
+	<li>Clonen Sie das Beispielrepository von Github
+	  <ol>
+	    <li><code>cd projects</code></li>
+	    <li><code>git clone git@github.com:dirkl/ProFit-DVCS.git</code></li>
+	    <li><code>cd ProFit-DVCS</code></li>
+	  </ol>
+	</li>
+	<li>Den Rest dieser Datei finden Sie auch im gerade ausgecheckten Beispielrepository in der Datei <code>Readme.html</code>; &oumlffnen Sie diese mit einem Browser.</li>
+      </ul>
     <div id="Anleitung">
+      <h4>Praxis&uuml;bung</h4>
       <em>Ziel dieser Praxis&uuml;bung</em> ist, f&uuml;r Ihre Gruppe aus der Template-Datei <a href="Template.html"><code>Template.html</code></a> eine eigene HTML-Datei <code>GruppeX.html</code> zu erstellen, zum Repository in einem eigenen Branch hinzuzuf&uuml;gen und wieder in den Master-Branch zu integrieren.
       <ol>
 	<li><b>Setzen Sie ein Feature um.</b>
