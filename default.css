@@ -10,10 +10,6 @@ html, body {
 	font-weight: bold;
 }
 
-#intro {
-	width: 60%;
-}
-
 #msgbox {
 	padding:10px;
 	color:#555;
