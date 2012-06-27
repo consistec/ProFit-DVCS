@@ -25,26 +25,26 @@
       <br>
       <em>Allgemeine Hinweise</em>
       <ul>
-	<li>Für die Praxisübung haben wir bei <a href="http://www.github.com">Github</a> einen gemeinsamen Account angelegt<br>
+	<li>F&uuml;r die Praxis&uuml;bung haben wir bei <a href="http://www.github.com">Github</a> einen gemeinsamen Account angelegt<br>
 	  Username: profitdvcs<br>
 	  Passwort: profit2.0
 	</li>
 	<li>In der Git-Shell bekommen Sie mittels <code>git Kommando --help</code> (z.B. <code>git commit --help</code>) Hilfe zu allen Git Kommandos</li>
-	<li>In der Shell steht Ihnen für Git Kommandos Tab-Completion zur Verfügung.</li>
-	<li>Zusätzlich zum Zugriff über Git, können Sie unser Git-Repository auch auf Github im Browser anschauen: <a href="https://github.com/dirkl/ProFit-DVCS">hier</a></li>
-	<li>Verschaffen Sie sich zwischendurch immer wieder einen Überblick über das Repo, indem Sie in der Shell die GUI Tools <code>gitk --all</code> und <code>git gui</code> aufrufen.
+	<li>In der Shell steht Ihnen f&uuml;r Git Kommandos Tab-Completion zur Verf&uuml;gung.</li>
+	<li>Zus&auml;tzlich zum Zugriff &uuml;ber Git, k&ouml;nnen Sie unser Git-Repository auch auf Github im Browser anschauen: <a href="https://github.com/dirkl/ProFit-DVCS">hier</a></li>
+	<li>Verschaffen Sie sich zwischendurch immer wieder einen &Uuml;berblick &uuml;ber das Repo, indem Sie in der Shell die GUI Tools <code>gitk --all</code> und <code>git gui</code> aufrufen.
       </ul>
       <br>
     </div>
     <div id="Anleitung">
-      <em>Ziel dieser Praxisübung</em> ist, für Ihre Gruppe aus der Template-Datei <a href="Template.html"><code>Template.html</code></a> eine eigene HTML-Datei <code>GruppeX.html</code> zu erstellen, zum Repository in einem eigenen Branch hinzuzufügen und wieder in den Master-Branch zu integrieren.
+      <em>Ziel dieser Praxis&uuml;bung</em> ist, f&uuml;r Ihre Gruppe aus der Template-Datei <a href="Template.html"><code>Template.html</code></a> eine eigene HTML-Datei <code>GruppeX.html</code> zu erstellen, zum Repository in einem eigenen Branch hinzuzuf&uuml;gen und wieder in den Master-Branch zu integrieren.
       <ol>
 	<li><b>Setzen Sie ein Feature um.</b>
 	  <ol>
 	    <li>Checken Sie den Master Branch aus
 	      <ul>
 		<li><code>git checkout master</code></li>
-		<li>Überprüfen Sie das Ergebnis in der Kommandozeile (<code>git status</code>) und in Gitk</li>
+		<li>&Uuml;berpr&uuml;fen Sie das Ergebnis in der Kommandozeile (<code>git status</code>) und in Gitk</li>
 	      </ul>
 	    </li>
 	    <li>Im Repository finden Sie nun zwei HTML-Dateien:
@@ -53,76 +53,76 @@
 		<li><code>Template.html</code></li>
 	      </ol>
 	    </li>
-	    <li>Erstellen Sie für Ihre Arbeiten zunächst einen neuen Branch <code>GruppeX</code>
+	    <li>Erstellen Sie f&uuml;r Ihre Arbeiten zun&auml;chst einen neuen Branch <code>GruppeX</code>
 	      <ul>
 		<li><code>git branch GruppeX</code></li>
 		<li>Wechseln Sie auf den neu erstellten Branch: <code>git checkout GruppeX</code></li>
-		<li><em>Hinweis: </em>Sie können diese beiden Kommandos auch in einem Schritt ausführen: <code>git checkout -b GruppeX</code></li>
+		<li><em>Hinweis: </em>Sie k&ouml;nnen diese beiden Kommandos auch in einem Schritt ausf&uuml;hren: <code>git checkout -b GruppeX</code></li>
 	      </ul>
 	    </li>
-	    <li>Erstellen Sie eine Kopie <code>GruppeX.html</code> von <code>Template.html</code> und fügen Sie diese dem Repository hinzu
+	    <li>Erstellen Sie eine Kopie <code>GruppeX.html</code> von <code>Template.html</code> und f&uuml;gen Sie diese dem Repository hinzu
 	      <ul>
 		<li>Kopieren der Template Datei in Explorer oder Shell</li>
 		<li>Aufnahme in den Index: <code>git add Dateiname</code> oder mittels <code>git gui</code>
 		<li>Committen Sie den initialen Dateizustand</li>
 	      </ul>
 	    </li>
-	    <li>Nehmen Sie Änderungen an Ihrer Datei vor
+	    <li>Nehmen Sie &Auml;nderungen an Ihrer Datei vor
 	      <ul>
 		<li>Editieren Sie <code>GruppeX.html</code> (z.B. mit Notepad oder in der Shell)</li>
-		<li>Führen Sie die dort beschreibenen Änderungen durch.</li>
+		<li>F&uuml;hren Sie die dort beschreibenen &Auml;nderungen durch.</li>
 	      </ul>
 	    </li>
 	  </ol>
 	</li>
 	<li><b>Intermezzo: Hotfix</b>
 	  <ul>
-	    <li>Einführung:
+	    <li>Einf&uuml;hrung:
 	      <ul>
 		<li>
-		  Wir möchten an dieser Stelle den typischen Fall durchspielen, dass während der Entwicklung eines Features ein kritischer Bug auftritt.<br>
-		  Ihr Chef kommt aufgeregt ins Zimmer und berichtet, dass auf der unternehmenskritischen Webseite für den Workshop "Versionierung intensiv" das Firmenlogo fehlt.
-		  Dieses Problem muss natürlich sofort gefixt werden und Ihre aktuelle Arbeit muss beiseite gelegt werden.
+		  Wir m&ouml;chten an dieser Stelle den typischen Fall durchspielen, dass w&auml;hrend der Entwicklung eines Features ein kritischer Bug auftritt.<br>
+		  Ihr Chef kommt aufgeregt ins Zimmer und berichtet, dass auf der unternehmenskritischen Webseite f&uuml;r den Workshop "Versionierung intensiv" das Firmenlogo fehlt.
+		  Dieses Problem muss nat&uuml;rlich sofort gefixt werden und Ihre aktuelle Arbeit muss beiseite gelegt werden.
 		</li>
-		<li>Überlegen Sie kurz, wie Sie das in Subversion umsetzen würden.</li>
-		<li>In Git bietet sich für diese Situation die Nutzung des Stash an.<br>
-		  Zur Erinnerung: auf dem Stash können Sie Änderungen ohne expliziten Commit ablegen (<code>git stash</code>) und später wieder herstellen (<code>git stash pop</code>)</li>
+		<li>&Uuml;berlegen Sie kurz, wie Sie das in Subversion umsetzen w&uuml;rden.</li>
+		<li>In Git bietet sich f&uuml;r diese Situation die Nutzung des Stash an.<br>
+		  Zur Erinnerung: auf dem Stash k&ouml;nnen Sie &Auml;nderungen ohne expliziten Commit ablegen (<code>git stash</code>) und sp&auml;ter wieder herstellen (<code>git stash pop</code>)</li>
 	      </ul>
 	    </li>
 	    <li>Umsetzung
 	      <ol>
-      		<li>Packen Sie Ihre aktuellen Änderungen auf den Stash und schauen Sie sich die Situation in <code>gitk</code> an</li>
+      		<li>Packen Sie Ihre aktuellen &Auml;nderungen auf den Stash und schauen Sie sich die Situation in <code>gitk</code> an</li>
 		<li>Checken Sie den Produktivbranch <code>online</code> aus, in dem der Fehler behoben werden muss: <code>git checkout online</code></li>
 		<li>Beheben Sie in <code>index.html</code> den fehlerhaften Link auf die Grafik</li>
 		<li>committen Sie Ihren Bugfix</li>
-		<li><em>Achtung:</em> Normalerweise würden Sie an dieser Stelle den Bugfix auch in das zentrale Repository pushen. Das lassen wir in dieser Übung weg, da es unvermeidlich zu Merge-Konflikten zwischen den einzelnen Gruppen käme (jede Gruppe behebt ja den gleichen Fehler).</li>
+		<li><em>Achtung:</em> Normalerweise w&uuml;rden Sie an dieser Stelle den Bugfix auch in das zentrale Repository pushen. Das lassen wir in dieser &Uuml;bung weg, da es unvermeidlich zu Merge-Konflikten zwischen den einzelnen Gruppen k&auml;me (jede Gruppe behebt ja den gleichen Fehler).</li>
 	      </ol>
 	    </li>
 	  </ul>
 	<li><b>Weiter am Haupttask</b>
 	  <ul>
-	    <li>Der akute Fehler wurde behoben und Sie können sich wieder der ursprünglichen Aufgabe zuwenden.
+	    <li>Der akute Fehler wurde behoben und Sie k&ouml;nnen sich wieder der urspr&uuml;nglichen Aufgabe zuwenden.
 	      <ol>
-		<li>Wechseln Sie zurück auf Ihren Branch: <code>git checkout GruppeX</code></li>
-		<li>Sehen Sie sich die HTML-Datei im Editor an: Ihre gestashten Änderungen sind nicht enthalten</li>
-		<li>Holen Sie die Änderungen vom Stash: <code>git stash pop</code></li>
+		<li>Wechseln Sie zur&uuml;ck auf Ihren Branch: <code>git checkout GruppeX</code></li>
+		<li>Sehen Sie sich die HTML-Datei im Editor an: Ihre gestashten &Auml;nderungen sind nicht enthalten</li>
+		<li>Holen Sie die &Auml;nderungen vom Stash: <code>git stash pop</code></li>
 		<li>Nun entspricht die HTML-Datei im Working-Directory wieder dem letzten Stand bevor Sie den Fehler beheben mussten</li>
-		<li>Schließen Sie Ihre Änderungen ab und committen Sie (hinzufügen der Änderungen zum Index nicht vergessen!)</li>
+		<li>Schlie&szlig;en Sie Ihre &Auml;nderungen ab und committen Sie (hinzuf&uuml;gen der &Auml;nderungen zum Index nicht vergessen!)</li>
 	      </ol>
 	    </li>
-	    <li>Integrieren Sie nun Ihre Änderungen in den <code>master</code> Branch
+	    <li>Integrieren Sie nun Ihre &Auml;nderungen in den <code>master</code> Branch
 	      <ol>
 		<li>Wechseln Sie auf den master Branch (<code>git checkout master</code>)</li>
-		<li>Integrieren Sie die Änderungen aus Ihrem Branch (<code>git merge GruppeX</code>)</li>
+		<li>Integrieren Sie die &Auml;nderungen aus Ihrem Branch (<code>git merge GruppeX</code>)</li>
 		<li>Schauen Sie sich das Ergebnis in <code>gitk</code> an</li>
 	      </ol>
 	    </li>
 	    <li>Senden Sie Ihre Arbeit zum Github-Server
 	      <ol>
-		<li>Da auch die anderen Gruppen auf diesem Branch aktiv sind, sollten Sie zunächst Ihr Repository noch einmal mit dem Server synchronisieren
+		<li>Da auch die anderen Gruppen auf diesem Branch aktiv sind, sollten Sie zun&auml;chst Ihr Repository noch einmal mit dem Server synchronisieren
 		  <ol>
-		    <li>Beziehen Sie Änderungen vom Server: <code>git fetch</code></li>
-		    <li>Falls es Änderungen gab, integrieren Sie diese mit Ihren Änderungen: <code>git merge origin/master</code></li>
+		    <li>Beziehen Sie &Auml;nderungen vom Server: <code>git fetch</code></li>
+		    <li>Falls es &Auml;nderungen gab, integrieren Sie diese mit Ihren &Auml;nderungen: <code>git merge origin/master</code></li>
 		  </ol>
 		</li>
 		<li>Senden Sie Ihren Stand an den Server: <code>git push</code></li>   
